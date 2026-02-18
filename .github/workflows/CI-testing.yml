@@ -28,7 +28,7 @@ jobs:
 
       # Install dependencies and run the test
       - name: Install dependencies
-        run: npm Install
+        run: npm install
 
       - name: Run all tests
         run: node --test
