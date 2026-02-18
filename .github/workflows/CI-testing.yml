@@ -25,6 +25,9 @@ jobs:
       # Setup node.js to accept the node.js project
       - name: set up Node.js
         uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: "npm"
 
       # Install dependencies and run the test
       - name: Install dependencies
