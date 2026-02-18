@@ -54,7 +54,7 @@ test.describe("Instructor answer key: Course registration integration", () => {
 
   test("enrollStudent rejects non-existent course", async () => {
     await assert.rejects(() => enrollStudent(db, "Alex", "MISSING101"), {
-      message: "course not found",
+      message: "unfound course",
     });
   });
 
